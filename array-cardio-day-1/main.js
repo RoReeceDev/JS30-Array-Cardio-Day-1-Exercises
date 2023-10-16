@@ -94,3 +94,11 @@ console.table(aToZ)
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+
+let typeOfTransport = data.reduce(function(obj, item){
+    if(!obj[item]){
+        obj[item] = 0
+    }
+    object[item]++
+    return obj
+},{})
